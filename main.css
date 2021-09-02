@@ -1,0 +1,274 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url(images/orange-abstract.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background-color: transparent;
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.content {
+  position: relative;
+  background-color: transparent;
+  height: 90%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+}
+
+.nav-bar {
+  /* background-color: yellow; */
+}
+.nav-bar ul {
+  display: flex;
+  background-color: transparent;
+  justify-content: center;
+}
+.nav-bar ul li {
+  list-style: none;
+  margin: 10px 40px;
+  transition: 0.25s;
+}
+.nav-bar ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar ul li:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* ---------------HOME----------------- */
+.home {
+  transition: 1s;
+  position: absolute;
+  /* background-color: red; */
+  /* top: 0px; */
+  height: 90%;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  /* display: none; */
+}
+.show-home {
+  display: none;
+}
+.home-txt {
+  transition: 1s;
+}
+.home-txt h1 {
+  font-size: 35px;
+}
+.home-txt span {
+  font-size: 80px;
+  font-weight: bolder;
+  color: #ff3c00;
+}
+.home-txt button {
+  padding: 20px 30px;
+  font-size: 20px;
+  margin: 40px 0px;
+  width: 300px;
+  animation-name: homebtnAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes homebtnAnimation {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.home-txt button .subname {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .home h1 {
+    font-size: 20px;
+  }
+  .home span {
+    font-size: 40px;
+  }
+  .home h2 {
+    font-size: 15px;
+  }
+  .home button {
+    width: 200px;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .home-txt button .subname {
+    font-size: 12px;
+  }
+}
+/* ---------------RESUME----------------- */
+.resume {
+  transition: 1s;
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.show-resume {
+  display: none;
+}
+.intro {
+  text-align: center;
+}
+.intro-lower-part {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.intro a {
+  color: #ff3c00;
+  text-decoration: none;
+}
+.intro a:hover {
+  text-decoration: underline;
+}
+.thename {
+  font-size: 50px;
+}
+.fname {
+  color: #ff3c00;
+  font-weight: bolder;
+}
+.education > div {
+  padding: 10px;
+  border-left: 3px dotted #ff3c00;
+}
+.education h1 {
+  font-size: 25px;
+}
+.educ-1 {
+  color: #ff3c00;
+  font-weight: bold;
+}
+.skills > div {
+  padding: 10px;
+  display: flex;
+}
+.skills ul {
+  flex: 1;
+}
+.skills h1 {
+  font-size: 25px;
+}
+
+.activities > div {
+  padding: 10px;
+}
+.activities h1 {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .resume {
+    padding: 0px 5px;
+  }
+  .resume p {
+    font-size: 10px;
+  }
+  .resume ul {
+    font-size: 10px;
+  }
+  .resume h1 {
+    font-size: 20px;
+  }
+}
+
+/* ---------------ABOUT----------------- */
+.about {
+  transition: 1s;
+  position: absolute;
+  height: 90%;
+  width: 100%;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* display: none; */
+}
+.show-about {
+  display: none;
+}
+.abt-parent {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.99);
+  position: relative;
+  width: 80%;
+  height: 150px;
+  background-color: black;
+  display: flex;
+  margin: 20px 0px;
+}
+.abt-parent > div {
+  flex: 1;
+  border: 1px solid #ff3c00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #ff3c00;
+}
+.abt-child {
+  position: absolute;
+  background-color: red;
+  height: 100%;
+  width: 50%;
+  transition: 1s;
+}
+.child1 {
+  background-image: url(images/240156681_195784742492030_6007847697917903384_n.jpg);
+  background-position: center;
+  background-size: contain;
+}
+.child2 {
+  background-image: url(images/A\ Software\ Engineering\ survival\ guide.png);
+  background-position: center;
+  background-size: cover;
+}
+.child3 {
+  background-image: url(images/other_projects.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.abt-parent:hover .abt-child {
+  transform: translate(100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    font-size: 8px;
+  }
+}
